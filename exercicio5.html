@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Exercicio 5</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        Insira uma frase: <input type="text" id="texto"> <br><br>
+        <button type="submit" id="botao">Clique aqui</button>
+        <script>
+            document.getElementById('botao').addEventListener('click', function() {
+                let texto = document.getElementById('texto').value;
+                alert(texto.length);
+            })
+        </script>
+    </body>
+</html>
