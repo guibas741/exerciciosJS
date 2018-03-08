@@ -1,0 +1,22 @@
+<hmtl>
+    <head>
+        <title>Exercicio 11</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        Valor 1: <input type="number" id="valor1">
+        Valor 2: <input type="number" id="valor2">
+        Soma: <input type="number" id="resultado">
+        <button id="somar">Somar</button>
+        <script type="text/javascript">
+            document.getElementById('somar').addEventListener('click', function() {
+                const valor1 = Number(document.getElementById('valor1').value);
+                const valor2 = Number(document.getElementById('valor2').value);
+
+                let valor3 = valor1 + valor2;
+                document.getElementById('resultado').value = valor3;
+            });
+            
+        </script>
+    </body>
+</hmtl>

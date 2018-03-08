@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Exercicio 9</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        Informe seu CPF: <input type="text" id="cpf">
+        <button type="submit" id="botao">Click</button>
+        <script type="text/javascript">
+            document.getElementById('botao').addEventListener('click', function() {
+                let cpfString = document.getElementById('cpf').value;
+                let cpf = cpfString.substring(0,3) + "." + cpfString.substring(3,6) + "." + cpfString.substring(6,9) + "-" + 
+                cpfString.substring(9,11);
+                alert(cpf);
+            });
+        </script>
+    </body>
+</html> 
