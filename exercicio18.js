@@ -1,0 +1,1 @@
+alert('O resto da divisao é ' + (5%2));

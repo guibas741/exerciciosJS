@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Exercicio 19</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        Numero: <input type="text" id="numero"/>
+        <button type="submit" id="verificar">Verificar</button>
+        <script>
+            document.getElementById('verificar').addEventListener('click', function() {
+                let valor = document.getElementById('numero').value;
+                if(isNaN(valor) || valor === null) alert('DIGITE UM VALOR NUMERICO');
+                else {
+                    if(valor % 2 === 0) {
+                        alert('PAR');
+                    } else {
+                        alert('IMPAR');
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>
