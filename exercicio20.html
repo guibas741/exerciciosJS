@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Exercicio 20</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        Valor 1: <input type="text" id="valor1"/>
+        Valor 2: <input type="text" id="valor2"/>
+        <button type="submit" id="btn">Multiplie!</button>
+        <script type="text/javascript">
+            function multiplicar(var1, var2) {
+                return alert('Resultado = ' + var1 * var2);
+            }
+            
+            document.getElementById('btn').addEventListener('click', function() {
+                let valor1 = document.getElementById('valor1').value;
+                let valor2 = document.getElementById('valor2').value;
+                multiplicar(valor1, valor2);
+            });
+        </script>
+    </body>
+</html>

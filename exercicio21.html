@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Exercicio 21</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        Informe um valor: <input type="text" id="valor">
+        <button type="submit" id="btn">Desconto de 5%!</button>
+        <script type="text/javascript">
+            document.getElementById('btn').addEventListener('click', function() {
+               let valor = document.getElementById('valor').value;
+               if(isNaN(valor)) {
+                   alert('informe um valor numerico');
+               } else {
+                    let desconto = valor * 0.05;
+                    let valorFinal = valor - desconto;
+                    alert('Desconto = ' + desconto + ' valor final = ' + valorFinal);
+               }
+            });
+        </script>
+    </body>
+</html>

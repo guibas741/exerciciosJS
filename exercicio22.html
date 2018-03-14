@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Exercicio 22</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        Ano Nascimento: <input type="text" id="anoNascimento">
+        <button type="submit" id="btn">Calcula</button>
+        <script type="text/javascript" src="exercicio22.js"></script>
+        <script type="text/javascript">
+            document.getElementById('btn').addEventListener('click', function() {
+                let anoNascimento = document.getElementById('anoNascimento').value;
+                verificaIdade(anoNascimento);
+            });
+        </script>
+    </body>
+</html>
