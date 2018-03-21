@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>EXERCICIO 32</title>
+        <meta chatset="UTF-8">
+    </head>
+    <body>
+        Texto: <input type="text" id="txt">
+        <button type="submit" id="btn">Buscar</button>
+        <script type="text/javascript" src="exercicio32.js"></script>
+        <script type="text/javascript">
+            document.getElementById('btn').addEventListener('click', function(){
+                const texto = document.getElementById('txt').value;
+                temDota(texto);
+            });
+        </script>
+    </body>
+</html>

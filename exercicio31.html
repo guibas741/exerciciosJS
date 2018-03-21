@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Exercicio 31</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="resultado"></div>
+        <script type="text/javascript">
+            let html = '';
+            for(let i = 0; i <= 10; i++) {
+                html += 'Tabuada do ' + i + '<br>';
+                for(let j = 0; j <= 10; j++) {
+                    html += i + ' x ' + j + ' = ' + (i*j) + '<br>';
+                }
+                html += '<br>';
+            }
+            document.getElementById('resultado').innerHTML = html;
+        </script>
+    </body>
+</html>
