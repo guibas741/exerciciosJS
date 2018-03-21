@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Exercicio 34</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        Numero: <input type="text" id="numInformado">
+        <button type="submit" id="btn">Jogar</button>
+        <script type="text/javascript" src="exercicio34.js"></script>
+        <script type="text/javascript">
+            document.getElementById('btn').addEventListener('click', function() {
+                const numero = document.getElementById('numInformado').value;
+                playRandomNumber(numero);
+            });
+        </script>
+    </body>
+</html>
