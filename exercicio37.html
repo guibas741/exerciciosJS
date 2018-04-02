@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Exercicio 37</title>
+        <meta charset="UTF-8">
+    </head>
+    <button id="length">Length</button>
+    <button id="nomes">Nomes</button>
+    <button id="add">Adicionar</button>
+    <button id="ordenar">Ordenar</button>
+    <button id="decres">Ordenar Descrescente</button>
+    <body>
+        <script type="text/javascript">
+            var gods = ['Zeus', 'Odin', 'Thor', 'Balder'];
+            var number = [1, 2, 545, 3, 23, 21, 5, 0];
+
+            document.getElementById('length').addEventListener('click', function() {
+                alert(gods.length);
+            });
+
+            document.getElementById('nomes').addEventListener('click', function() {
+                for(let i = 0; i < gods.length; i++) {
+                    alert(gods[i]);
+                }
+            });
+
+            document.getElementById('add').addEventListener('click', function() {
+                gods.push('Loki', 'Freya', 'Hermes');
+                for(let i = 0; i < gods.length; i++) {
+                    alert(gods[i]);
+                }
+            });
+            
+            document.getElementById('ordenar').addEventListener('click', function() {
+                alert(number.sort(function(a, b){return a-b}));
+            });
+
+            document.getElementById('decres').addEventListener('click', function() {
+                alert(number.sort(function(a, b){return b-a}));
+            });
+
+
+        </script>
+    </body>
+</html>
