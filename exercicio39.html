@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Exercicio 39</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <input type="text" id="texto" placeholder="Insira o nome de um Deus">
+        <button type="subtmit" id="btn">Adicionar</button>
+        <ul id="nomes"></ul>
+        <script type="text/javascript">
+            var gods = [];
+            let html = '';
+
+            document.getElementById('btn').addEventListener('click', function() {
+                let nome = (document.getElementById('texto').value);
+                gods.push(nome);
+                html += '<li>' + nome + '</li>';
+
+                document.getElementById('nomes').innerHTML = html;
+            });
+
+           
+            
+
+        </script>
+    </body>
+</html>
