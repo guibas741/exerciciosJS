@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Exercicio 38</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <ul id="nomes"></ul>
+        <script type="text/javascript">
+            var gods = ['athena', 'zeus', 'hermes', 'hades', 'ares'];
+            let html = '';
+            for(let i = 0; i < gods.length; i++) {
+                html += '<li>' + gods[i] + '</li>';
+            }
+
+            document.getElementById('nomes').innerHTML = html;
+
+        </script>
+    </body>
+</html>
